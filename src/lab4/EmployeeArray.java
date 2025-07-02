@@ -25,17 +25,17 @@ class Employee
 public class EmployeeArray {
 
 	public static void main(String[] args) {
-		Employee[] emp= new Employee[3];
+		Employee[] employees= new Employee[3];
 		
-		emp[0]= new Employee(101,"Akshay",10152);
-		emp[1]= new Employee(102,"Harry",15200);
-		emp[2]= new Employee(101,"Karan",5000);
+		employees[0]= new Employee(101,"Akshay",10152);
+		employees[1]= new Employee(102,"Harry",15200);
+		employees[2]= new Employee(101,"Karan",5000);
 	
 		
 		System.out.println("Employee Details are:");
-		for(int i=0;i<emp.length; i++) 
+		for(int i=0;i<employees.length; i++) 
 		{
-			emp[i].dispalyInfo();
+			employees[i].dispalyInfo();
 		}
 	}
 
