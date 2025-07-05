@@ -1,4 +1,4 @@
-/*Write class game{ } class boardgame extends game{ } class chess extends boardgame{ }
+/*1.Write class game{ } class boardgame extends game{ } class chess extends boardgame{ }
 class gamedemo{
 public static void main(String[] args) {
 chess ch=new chess(); }

@@ -24,30 +24,29 @@ class Date{
 
 	   @Override
 	   public String toString() {
-		return "day=" + day + ", month=" + month + ", year=" + year+"" ;
+		return "day=" + day + ", month=" + month + ", year=" + year + "";
 	   }
-	   
+
 }
 
-class Employee extends Date{
+class Employee{
 	int id;
 	String name;
 	Date dob;
-Employee(){
+	Employee()
+	{
 	id=0;
 	name="Unknown";
 	dob=new Date();
-}
-	Employee(int id, String name, Date dob) {
+    }
+	Employee(int id, String name, Date dob) 
+	{
 		super();
 		this.id = id;
 		this.name = name;
 		this.dob = dob;
 	}
-	@Override
-	public String toString() {
-		return "id=" + id + ", name=" + name + ", dob=" + dob+"";
-	}
+	
 	
 }
 
@@ -69,7 +68,7 @@ class WageEmployee extends Employee{
       }
 	@Override
 	public String toString() {
-		return "hrs=" + hrs + ", rate=" + rate + ", computeSalary()=" + computeSalary() + "";
+		return "id= "+id+", Name="+name+", Birth date="+dob+", hrs=" + hrs + ", rate=" + rate + ", computeSalary()=" + computeSalary() + "";
 	}
 	
 }
@@ -102,6 +101,7 @@ public class EmployeeDemo {
 		System.out.println("Details are:");
 		System.out.println(we);
 		
+		sc.close();
 
 	}
 
